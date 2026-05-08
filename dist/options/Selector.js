@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = Selector;
 var React = require("react");
 var avatarContext_1 = require("./avatarContext");
 function getComponentOptionValue(component) {
@@ -30,4 +31,3 @@ function Selector(props) {
     var selectedOption = React.useMemo(function () { return getSelectedOption(); }, [avatarContext]);
     return selectedOption;
 }
-exports.default = Selector;

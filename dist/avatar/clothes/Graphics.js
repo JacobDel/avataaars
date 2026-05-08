@@ -19,7 +19,7 @@ exports.Bear = exports.Resist = exports.Pizza = exports.Selena = exports.Hola = 
 var React = require("react");
 var lodash_1 = require("lodash");
 var options_1 = require("../../options");
-var Skull = exports.Skull = /** @class */ (function (_super) {
+var Skull = /** @class */ (function (_super) {
     __extends(Skull, _super);
     function Skull() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -32,7 +32,8 @@ var Skull = exports.Skull = /** @class */ (function (_super) {
     Skull.optionValue = 'Skull';
     return Skull;
 }(React.Component));
-var SkullOutline = exports.SkullOutline = /** @class */ (function (_super) {
+exports.Skull = Skull;
+var SkullOutline = /** @class */ (function (_super) {
     __extends(SkullOutline, _super);
     function SkullOutline() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -49,7 +50,8 @@ var SkullOutline = exports.SkullOutline = /** @class */ (function (_super) {
     SkullOutline.optionValue = 'SkullOutline';
     return SkullOutline;
 }(React.Component));
-var Bat = exports.Bat = /** @class */ (function (_super) {
+exports.SkullOutline = SkullOutline;
+var Bat = /** @class */ (function (_super) {
     __extends(Bat, _super);
     function Bat() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -62,7 +64,8 @@ var Bat = exports.Bat = /** @class */ (function (_super) {
     Bat.optionValue = 'Bat';
     return Bat;
 }(React.Component));
-var Cumbia = exports.Cumbia = /** @class */ (function (_super) {
+exports.Bat = Bat;
+var Cumbia = /** @class */ (function (_super) {
     __extends(Cumbia, _super);
     function Cumbia() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -84,7 +87,8 @@ var Cumbia = exports.Cumbia = /** @class */ (function (_super) {
     Cumbia.optionValue = 'Cumbia';
     return Cumbia;
 }(React.Component));
-var Deer = exports.Deer = /** @class */ (function (_super) {
+exports.Cumbia = Cumbia;
+var Deer = /** @class */ (function (_super) {
     __extends(Deer, _super);
     function Deer() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -97,7 +101,8 @@ var Deer = exports.Deer = /** @class */ (function (_super) {
     Deer.optionValue = 'Deer';
     return Deer;
 }(React.Component));
-var Diamond = exports.Diamond = /** @class */ (function (_super) {
+exports.Deer = Deer;
+var Diamond = /** @class */ (function (_super) {
     __extends(Diamond, _super);
     function Diamond() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -114,7 +119,8 @@ var Diamond = exports.Diamond = /** @class */ (function (_super) {
     Diamond.optionValue = 'Diamond';
     return Diamond;
 }(React.Component));
-var Hola = exports.Hola = /** @class */ (function (_super) {
+exports.Diamond = Diamond;
+var Hola = /** @class */ (function (_super) {
     __extends(Hola, _super);
     function Hola() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -127,7 +133,8 @@ var Hola = exports.Hola = /** @class */ (function (_super) {
     Hola.optionValue = 'Hola';
     return Hola;
 }(React.Component));
-var Selena = exports.Selena = /** @class */ (function (_super) {
+exports.Hola = Hola;
+var Selena = /** @class */ (function (_super) {
     __extends(Selena, _super);
     function Selena() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -143,7 +150,8 @@ var Selena = exports.Selena = /** @class */ (function (_super) {
     Selena.optionValue = 'Selena';
     return Selena;
 }(React.Component));
-var Pizza = exports.Pizza = /** @class */ (function (_super) {
+exports.Selena = Selena;
+var Pizza = /** @class */ (function (_super) {
     __extends(Pizza, _super);
     function Pizza() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -159,7 +167,8 @@ var Pizza = exports.Pizza = /** @class */ (function (_super) {
     Pizza.optionValue = 'Pizza';
     return Pizza;
 }(React.Component));
-var Resist = exports.Resist = /** @class */ (function (_super) {
+exports.Pizza = Pizza;
+var Resist = /** @class */ (function (_super) {
     __extends(Resist, _super);
     function Resist() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -180,7 +189,8 @@ var Resist = exports.Resist = /** @class */ (function (_super) {
     Resist.optionValue = 'Resist';
     return Resist;
 }(React.Component));
-var Bear = exports.Bear = /** @class */ (function (_super) {
+exports.Resist = Resist;
+var Bear = /** @class */ (function (_super) {
     __extends(Bear, _super);
     function Bear() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
@@ -189,8 +199,7 @@ var Bear = exports.Bear = /** @class */ (function (_super) {
         return _this;
     }
     Bear.prototype.render = function () {
-        var _a;
-        var mask1 = (_a = this, _a.mask1), path1 = _a.path1;
+        var _a = this, mask1 = _a.mask1, path1 = _a.path1;
         return (React.createElement("g", { id: 'Clothing/Graphic/Bear', mask: "url(#".concat(this.props.maskID, ")"), strokeWidth: '1', fillRule: 'evenodd' },
             React.createElement("defs", null,
                 React.createElement("polygon", { id: path1, points: '47.8916289 0.430054064 47.8916289 41.9204613 0.45345556 41.9204613 0.45345556 0.430054064 47.8916289 0.430054064' })),
@@ -203,6 +212,7 @@ var Bear = exports.Bear = /** @class */ (function (_super) {
     Bear.optionValue = 'Bear';
     return Bear;
 }(React.Component));
+exports.Bear = Bear;
 var Graphics = /** @class */ (function (_super) {
     __extends(Graphics, _super);
     function Graphics() {

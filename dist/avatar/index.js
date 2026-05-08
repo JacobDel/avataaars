@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AvatarStyle = void 0;
+exports.default = Avatar;
 var React = require("react");
 var lodash_1 = require("lodash");
 var accessories_1 = require("./top/accessories");
@@ -52,4 +53,3 @@ function Avatar(props) {
                         React.createElement(top_1.default, null,
                             React.createElement(accessories_1.default, null))))))));
 }
-exports.default = Avatar;
